@@ -5,21 +5,14 @@
 #ifndef CS205_PROJECT_MATRIX_H
 #define CS205_PROJECT_MATRIX_H
 
-
+#include <bits/stdc++.h>
+using namespace std;
 template<typename T>class Matrix{
 private:
     int length,width;
-    T ** matrix;
+    std::vector<vector<T>>;
 public:
-    bool operator==(const Matrix &rhs) const {
-        return length == rhs.length &&
-               width == rhs.width &&
-               matrix == rhs.matrix;
-    }
 
-    bool operator!=(const Matrix &rhs) const {
-        return !(rhs == *this);
-    }
 };
 
 
